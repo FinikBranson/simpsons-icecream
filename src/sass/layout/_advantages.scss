@@ -1,1 +1,53 @@
+.advantages {
+  @extend .section;
+  background-color: var(--footer-section-background);
 
+  &__list {
+    @include for-tablet-up {
+      display: flex;
+      min-width: 162px;
+      gap: 16px;
+      font-size: 12px;
+    }
+  }
+
+  &__item {
+    @media (max-width: 767px) {
+      margin-right: 70px;
+    }
+  }
+
+  &__item:not(:last-child) {
+    @media (max-width: 767px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__icon {
+    fill: var(--sub-title-color);
+    margin-bottom: 16px;
+  }
+
+  &__number {
+    margin-bottom: 13px;
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    color: var(--red-dominant-color);
+  }
+
+  &__text {
+    font-weight: 700;
+    line-height: 1.7;
+  }
+
+  &__title {
+    @extend .visually-hidden;
+  }
+
+  &__container {
+    @extend .container;
+  }
+}
