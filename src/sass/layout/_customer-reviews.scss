@@ -1,0 +1,75 @@
+.reviews {
+  &__picture {
+    @include centered-flex;
+    margin-bottom: 30px;
+  }
+
+  &__response {
+  }
+
+  &__gradient {
+    text-align: center;
+    height: 310;
+    background-color: #fafafa;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    display: inline-flex;
+    align-items: flex-end;
+    text-align: center;
+    width: 180px;
+    height: 280px;
+    padding-left: 25px;
+    padding-right: 15px;
+    line-height: 2.55;
+    background-color: #fafafa;
+    background-repeat: no-repeat;
+    background-position: center bottom 1px;
+    background-size: 100% 200px;
+    background: repeating-linear-gradient(
+      to bottom,
+      #f1f1f1,
+      #f1f1f1 1px,
+      #fafafa 1px,
+      #fafafa 30px
+    );
+  }
+  &__text::before {
+    content: '';
+    position: absolute;
+    top: 18px;
+    left: 52px;
+    width: 60px;
+    height: 45px;
+    background-image: url(../images/customer-reviews/icon.png);
+  }
+
+  &__container-point {
+    @include centered-flex;
+    margin-bottom: 15px;
+  }
+
+  &__point {
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    background-color: var(--red-dominant-color);
+  }
+  &__point:nth-child(2) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+.slick-dots {
+  width: 280px;
+}
+.slick-dots li.slick-active button:before {
+  color: var(--red-dominant-color);
+}
