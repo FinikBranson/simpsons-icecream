@@ -1,1 +1,1 @@
-$('.single-item').slick({dots:true}) ; 
+$('.single-item').slick({dots:true, arrows:false}) ; 
