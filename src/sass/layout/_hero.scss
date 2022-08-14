@@ -78,7 +78,7 @@
     font-size: 8px;
     line-height: 1.25;
 
-    color: var(--white-dominant-color);
+    color: var(--default-background);
 
     background-color: var(--red-dominant-color);
     border-radius: 20px;
@@ -121,7 +121,7 @@
   &__btn--opposite {
     color: var(--red-dominant-color);
 
-    background-color: var(--white-dominant-color);
+    background-color: var(--default-background);
 
     @media screen and (max-width: 1199px) {
       width: 83px;
