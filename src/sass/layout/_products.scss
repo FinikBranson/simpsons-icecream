@@ -71,12 +71,12 @@
 .products__item::before {
   content: ' ';
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: calc(-70px * 2);
+  left: 0;
 
   height: 280px;
   width: 280px;
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -85,14 +85,17 @@
     background-image: url(../images/products/mob/mob-ice@2x.png);
   }
   @media screen and (min-width: 768px) {
+    top: calc(-68px * 2);
     height: 224px;
     width: 224px;
+
     background-image: url(../images/products/tab/tab-ice.png);
     @include for-pixel-ratio-2 {
       background-image: url(../images/products/tab/tab-ice@2x.png);
     }
   }
   @media screen and (min-width: 1200px) {
+    top: calc(-261px * 1);
     height: 394px;
     width: 368px;
     background-image: url(../images/products/desc/des-ice.png);
