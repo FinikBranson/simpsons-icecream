@@ -90,7 +90,7 @@
     line-height: 1.3;
 
     color: var(--red-dominant-color);
-    background-color: var(--white-dominant-color);
+    background-color: var(--default-background);
 
     cursor: pointer;
 
@@ -121,7 +121,7 @@
     font-size: 14px;
     line-height: 1.3;
 
-    color: var(--white-dominant-color);
+    color: var(--footer-section-background);
 
     @include for-desktop-up {
       display: flex;
