@@ -197,4 +197,20 @@ body {
 
 .section {
   padding: 60px 0;
-}/*# sourceMappingURL=index.css.map */
+}
+
+.footer__subtitle {
+  font-weight: 400;
+}
+
+.socials__list {
+  display: flex;
+  gap: 28px;
+}
+.socials__icon {
+  fill: #FEA5BB;
+}
+
+.copyright {
+  border-top: 1px solid #E1E1E1;
+}
