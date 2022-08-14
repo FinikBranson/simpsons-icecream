@@ -32,7 +32,11 @@
       </svg>
     </button>
 
-    <button class="header__btn header__btn--hidden" type="button">
+    <button
+      class="header__btn header__btn--hidden"
+      type="button"
+      data-modal-open
+    >
       Buy now
       <svg class="header__arrov" aria-hidden="true">
         <use href="./images/header/icon.svg#icon-arrov"></use>
@@ -46,7 +50,7 @@
         </svg>
       </button>
 
-      <button class="header__btn" type="button">
+      <button class="header__btn" type="button" data-modal-open>
         Buy now
         <svg class="header__arrov" aria-hidden="true">
           <use href="./images/header/icon.svg#icon-arrov"></use>
@@ -74,3 +78,27 @@
     </div>
   </div>
 </section>
+
+<!-- modal -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="modal__btn--close" data-modal-close>
+      <svg class="modal__cros-icon" aria-hidden="true">
+        <use href="./images/header/icon1.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <h2 class="modal__title">
+      order now and get a
+      <span class="modal__ title modal__title-discount"> discount!!!</span>
+    </h2>
+
+    <form action="" class="form">
+      <input class="form__input" type="text" placeholder="name" required />
+      <input class="form__input" type="tel" placeholder="telephone" required />
+      <input class="form__input" type="email" placeholder="e-mail" required />
+
+      <button class="modal__btn--send" type="submit">send</button>
+    </form>
+  </div>
+</div>
