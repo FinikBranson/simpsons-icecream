@@ -37,7 +37,7 @@
 
   margin-bottom: 70px;
 
-  color: var(--white-dominant-color);
+  color: var(--default-background);
 }
 .products__list {
   text-align: center;
@@ -178,7 +178,7 @@
   padding: 0 40px;
   margin-bottom: 32px;
 
-  color: var(--white-dominant-color);
+  color: var(--default-background);
 
   @media screen and (min-width: 768px) {
     line-height: 1.76;
@@ -202,18 +202,32 @@
   border-radius: 50%;
   border: inherit;
 
-  background-color: #fff;
+  background-color: var(--default-background);
 
   align-items: center;
 
   margin-bottom: 40px;
+  transition: transform 550ms cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 1200px) {
     margin-bottom: 60px;
   }
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--red-dominant-color);
+  transform: scale(1.25);
 }
 
 .btn__icon {
   width: 15px;
   height: 15px;
   fill: var(--red-dominant-color);
+  transition: transform 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover .btn__icon,
+.btn:focus .btn__icon {
+  fill: var(--default-background);
+  transform: scale3d(1.5);
 }
