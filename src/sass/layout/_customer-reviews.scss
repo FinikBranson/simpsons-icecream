@@ -147,14 +147,14 @@
 
 // SLick
 .slick-dots {
-  width: 280px;
+  width: 270px;
 
   @include for-tablet-up {
-    width: 700px;
+    width: 695px;
   }
 
   @include for-desktop-up {
-    width: 1175px;
+    width: 1165px;
   }
 
   & li:nth-child(1) {
