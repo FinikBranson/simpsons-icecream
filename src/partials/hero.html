@@ -44,31 +44,37 @@
         <img src="./images/hero/tablet/milk-tablet.png" alt="jug of milk" />
       </picture>
       <div class="hero__text">
-        <p>
+        <button type="button" class="hero__btn-arrow">
+          <picture>
+            <source
+              srcset="
+                ./images/hero/tablet/arrow-right-tablet.png    1x,
+                ./images/hero/tablet/arrow-right-tablet@2x.png 2x
+              "
+              media="(max-width: 1199px)"
+            />
+            <source
+              srcset="
+                ./images/hero/desktop/arrow-right-desktop.png    1x,
+                ./images/hero/desktop/arrow-right-desktop@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              class="hero__arrow-icon"
+              src="./images/hero/desktop/arrow-right-desktop.png"
+              alt="arrow right"
+            />
+          </picture>
+        </button>
+        <p class="hero__text--hidden">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et
         </p>
-
-        <picture class="hero__arrow-icon">
-          <source
-            srcset="
-              ./images/hero/tablet/arrow-right-tablet.png    1x,
-              ./images/hero/tablet/arrow-right-tablet@2x.png 2x
-            "
-            media="(max-width: 1199px)"
-          />
-          <source
-            srcset="
-              ./images/hero/desktop/arrow-right-desktop.png    1x,
-              ./images/hero/desktop/arrow-right-desktop@2x.png 2x
-            "
-            media="(min-width: 1200px)"
-          />
-          <img
-            src="./images/hero/desktop/arrow-right-desktop.png"
-            alt="arrow right"
-          />
-        </picture>
+        <p class="hero__backdrop">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rem
+          incidunt! Exercitationem architecto delectus quod mollitia.
+        </p>
       </div>
     </div>
 
