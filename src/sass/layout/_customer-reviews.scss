@@ -134,7 +134,7 @@
     width: 32px;
     height: 4px;
     background-size: 100%;
-    background-image: url(../images/customer-reviews/point.png);
+    background-image: url(../images/customer-reviews/point.svg);
 
     @include for-tablet-up {
       left: 51px;
@@ -147,20 +147,20 @@
 
 // SLick
 .slick-dots {
-  width: 280px;
+  width: 270px;
 
   @include for-tablet-up {
-    width: 700px;
+    width: 695px;
   }
 
   @include for-desktop-up {
-    width: 1175px;
+    width: 1165px;
   }
 
   & li:nth-child(1) {
     background-image: url(../images/customer-reviews/home_1.svg);
     background-repeat: no-repeat;
-    ackground-size: 12px 12px;
+    background-size: 12px 12px;
     background-position: 60% 40%;
   }
 

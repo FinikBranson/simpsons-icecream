@@ -1,0 +1,15 @@
+.gallery {
+    &__list {
+        width: 100%;
+        min-height: 136px;
+        display: flex;
+        gap: 3px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3px;
+    }
+}
