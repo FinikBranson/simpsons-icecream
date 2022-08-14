@@ -1,4 +1,4 @@
-.gallery .section {
+.gallery.section {
     padding-top: 0;
 }
 
@@ -7,7 +7,7 @@
 }
 
 .gallery {
-    background-image: linear-gradient(var(--footer-section-background) 32%, var(--white-dominant-color) 15%);
+    background-image: linear-gradient(var(--footer-section-background) 32%, var(---default-background) 15%);
 
     &__list {
         width: 100%;
