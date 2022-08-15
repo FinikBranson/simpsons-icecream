@@ -1,10 +1,20 @@
 .footer {
   background-color: var(--footer-section-background);
+  &__section {
+    padding-bottom: 4px;
+    @media (max-width: 1200px) {
+      padding-top: 20px;
+    }
+  }
   &__inner {
+    margin-bottom: 40px;
     @media (min-width: 768px) {
       display: flex;
-      gap: 128px;
-      margin-bottom: 40px;
+      justify-content: space-between;
+    }
+
+    @media (min-width: 1200px) {
+      margin-bottom: 60px;
     }
   }
   &__subtitle {
@@ -36,12 +46,13 @@
     }
 
     @media (min-width: 1200px) {
-      width: 472px;
+      width: 474px;
       font-size: 56px;
+      font-weight: 400;
     }
   }
 
-  &__subinner {
+  &__content {
     @media (min-width: 768px) {
       margin-top: 60px;
     }
@@ -52,11 +63,7 @@
 
   &__address {
     display: block;
-
-    margin: 40px 0;
-    @media (min-width: 768px) {
-      margin: 40px 0 0 0;
-    }
+    margin-top: 40px;
   }
 
   &__tel {
@@ -89,7 +96,6 @@
 
   &__text {
     width: 150px;
-
     margin-left: auto;
     margin-right: auto;
 
