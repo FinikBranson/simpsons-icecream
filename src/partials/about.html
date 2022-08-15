@@ -1,0 +1,102 @@
+<section class="about" id="about">
+    <div class="about__container container">
+        <p class="about__pre-title">tradition and love</p>
+        <h2 class="about__title">how it’s made?</h2>
+        <div class="about__block">
+            <div class="about__image-wrap">
+            <img class="about__image" loading="lazy" 
+            srcset="
+                ./images/about/cow-mobile@1x.png 280w, 
+                ./images/about/cow-mobile@2x.png 560w,
+                ./images/about/cow-tablet@1x.png 336w, 
+                ./images/about/cow-tablet@2x.png 672w,
+                ./images/about/cow-desktop@1x.png 501w, 
+                ./images/about/cow-desktop@2x.png 1002w 
+                " 
+            srcset="
+                ./images/about/cow-mobile@1x.webp 280w, 
+                ./images/about/cow-mobile@2x.webp 560w,
+                ./images/about/cow-tablet@1x.webp 336w, 
+                ./images/about/cow-tablet@2x.webp 672w,
+                ./images/about/cow-desktop@1x.webp 501w, 
+                ./images/about/cow-desktop@2x.webp 1002w
+                " 
+            sizes="(min-width: 1200px) 516px, (min-width: 768px) 340px, (min-width: 320px) 280px"
+            src="./images/about/cow-tablet@1x.png" alt="the cow and milk">
+            </div>
+            <div class="about__text-block">
+                <p class="about__main-text">
+                    Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+                    lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+                </p>
+                <p class="about__text">
+                    Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+                    in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+                    maximus. Cras massa nibh, tincidunt.<br> </br>
+                    Aliquam erat volutpat. Aenean accumsan.
+                </p>
+                <button class="about__btn"data-modal-open>
+                    Read more
+                    <svg class="btn__icon" width="5px" height="8px">
+                        <use href="./images/about/sprite.svg#arrow"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="about__backdrop is-hidden" data-modal>
+    <div class="about__menu">
+        <ul class="about-backdrop__list">
+            <li class="about-backdrop__item">
+                <h3 class="about-overlay__name">Ice Cream</h3>
+                <p class="about-overlay__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sint a nam culpa, quidem
+                    blanditiis? Fugiat deleniti
+                    corrupti voluptas earum labore perspiciatis, veritatis at ad rerum ut, impedit id voluptatem
+                    distinctio quo a iste
+                    quibusdam maiores totam ullam et nisi? Similique libero soluta vel magnam mollitia. Ipsam iure,
+                    explicabo cupiditate
+                    sint facilis hic, eum amet laudantium odio sed earum quae quos deleniti voluptatibus aut, reiciendis
+                    deserunt inventore
+                    maxime adipisci?
+                </p>
+            </li>
+            <li class="about-backdrop__item">
+                <h3 class="about-overlay__name">Ice Cream</h3>
+                <p class="about-overlay__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sint a nam culpa, quidem
+                    blanditiis? Fugiat deleniti
+                    corrupti voluptas earum labore perspiciatis, veritatis at ad rerum ut, impedit id voluptatem
+                    distinctio quo a iste
+                    quibusdam maiores totam ullam et nisi? Similique libero soluta vel magnam mollitia. Ipsam iure,
+                    explicabo cupiditate
+                    sint facilis hic, eum amet laudantium odio sed earum quae quos deleniti voluptatibus aut, reiciendis
+                    deserunt inventore
+                    maxime adipisci?
+                </p>
+            </li>
+            <li class="about-backdrop__item">
+                <h3 class="about-overlay__name">Ice Cream</h3>
+                <p class="about-overlay__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sint a nam culpa, quidem
+                    blanditiis? Fugiat deleniti
+                    corrupti voluptas earum labore perspiciatis, veritatis at ad rerum ut, impedit id voluptatem
+                    distinctio quo a iste
+                    quibusdam maiores totam ullam et nisi? Similique libero soluta vel magnam mollitia. Ipsam iure,
+                    explicabo cupiditate
+                    sint facilis hic, eum amet laudantium odio sed earum quae quos deleniti voluptatibus aut, reiciendis
+                    deserunt inventore
+                    maxime adipisci?
+                </p>
+            </li>
+        </ul>
+        <button class="about__btn about__menu-btn" data-modal-close>
+            Back to the site
+            <svg class="btn__icon" width="5px" height="8px">
+                <use href="./images/about/sprite.svg#arrow"></use>
+            </svg>
+        </button>
+    </div>
+</div>
