@@ -355,7 +355,7 @@
 
     &:hover .hero__arrow-icon {
       background-color: var(--default-background);
-      transform: rotate(270deg);
+      transform: rotate(-90deg);
       border-radius: 50%;
     }
   }
