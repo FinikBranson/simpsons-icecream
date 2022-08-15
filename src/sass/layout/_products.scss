@@ -155,10 +155,11 @@
   width: 6px;
   height: 6px;
 
-  border-radius: 50%;
+  border-radius: 100%;
 
   background: #ffffff;
 }
+
 .products__card {
   padding-top: 160px;
   @media screen and (min-width: 768px) {
@@ -230,4 +231,32 @@
 .btn:focus .btn__icon {
   fill: var(--default-background);
   transform: scale3d(1.5);
+
+}
+
+.products__dots::after {
+  content: ' ';
+  position: absolute;
+  left: 47%;
+
+  bottom: -32px;
+  width: 6px;
+  height: 6px;
+
+  border-radius: 100%;
+
+  background: #ffffff;
+}
+.products__dots::before {
+  content: ' ';
+  position: absolute;
+  left: 53%;
+
+  bottom: -32px;
+  width: 6px;
+  height: 6px;
+
+  border-radius: 100%;
+
+  background: #ffffff;
 }
