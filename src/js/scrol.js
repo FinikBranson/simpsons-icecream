@@ -1,4 +1,3 @@
-
 import $ from 'jquery';
 
 $(document).ready(function () {
@@ -18,7 +17,7 @@ $(document).ready(function () {
         {
           scrollTop: $(hash).offset().top,
         },
-        800,
+        1010,
         function () {
           // Add hash (#) to URL when done scrolling (default click behavior)
           window.location.hash = hash;
