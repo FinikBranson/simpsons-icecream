@@ -1,6 +1,6 @@
 .about {
     padding-top: 125px;
-    background-color: #fff5f6;
+    background-color: var(--footer-section-background);
 
     @media screen and (min-width: 1200px) {
             background-image: url(../images/about/milk-desktop@1x.png);
@@ -48,7 +48,7 @@
     line-height: calc(21 / 18);
     text-align: center;
     text-transform: uppercase;
-    color: #ffa5ba;
+    color: var(--sub-title-color);
     margin-bottom: 15px;
 
     @include for-tablet-up {
@@ -71,7 +71,7 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.04em;
-    color: #d41443;
+    color: var(--red-dominant-color);
     max-width: 200px;
     margin: 0 auto;
 
@@ -147,7 +147,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.62;
-    color: #000000;
+    color: var(--black-color-text);
     margin-bottom: 25px;
 
     @include for-phone-up {
@@ -173,7 +173,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.62;
-    color: #907e82;
+    color: var(--gray-color-text);
     position: relative;
 
     @include for-phone-up {
@@ -228,8 +228,8 @@
     cursor: pointer;
 
     &--regular {
-        color: #d41342;
-        background-color: #ffffff;
+        color: var(--red-dominant-color);
+        background-color: var(--default-background);
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover,
@@ -239,8 +239,8 @@
     }
 
     &--alt {
-        color: #ffffff;
-        background-color: #d41342;
+        color: var(--default-background);
+        background-color: var(--red-dominant-color);
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover,
@@ -254,62 +254,4 @@
     width: 12px;
     height: 10px;
     stroke: var(--red-dominant-color);
-}
-
-// Modal
-
-.about__backdrop {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 2;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-}
-
-.about__menu {
-    max-width: 700px;
-    padding: 30px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff5f6;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    border-radius: 10px;
-}
-
-.about__menu-btn {
-    margin: 0 auto;
-}
-
-.about-overlay__name {
-    margin-bottom: 15px;
-
-    font-family: 'Titan One', sans-serif;
-    color: #d41443;
-    font-size: 30px;
-
-    @include for-phone-up {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-}
-
-.about-overlay__text {
-    margin-bottom: 30px;
-
-    @include for-phone-up {
-        font-size: 12px;
-        margin-bottom: 15px;
-    }
 }
