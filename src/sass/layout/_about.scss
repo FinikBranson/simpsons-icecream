@@ -7,7 +7,7 @@
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center 95%;
-    
+            
             @media (min-device-pixel-ratio: 2),
             (-webkit-min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
@@ -140,9 +140,6 @@
         width: 516px;
         height: 516px;
         margin-top: 55px;
-        &:hover {
-            transform: rotate(180deg);
-        }
     }
 }
 
