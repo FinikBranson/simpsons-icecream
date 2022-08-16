@@ -276,7 +276,7 @@
     line-height: 1.25;
     text-align: right;
 
-    color: var(--white-dominant-color);
+    color: var(--default-background);
 
     @include for-desktop-up {
       font-size: 14px;
