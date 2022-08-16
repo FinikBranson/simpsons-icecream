@@ -35,7 +35,7 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
-    color: var(--white-dominant-color);
+    color: var(--default-background);
 
     z-index: 50;
 
@@ -355,7 +355,7 @@
 
     &:hover .hero__arrow-icon {
       background-color: var(--default-background);
-      transform: rotate(270deg);
+      transform: rotate(-90deg);
       border-radius: 50%;
     }
   }

@@ -1,11 +1,18 @@
 .footer {
   background-color: var(--footer-section-background);
+  &__section {         
+      padding: 40px 0;
+      @media (min-width: 1200px) {
+        padding-top: 121px;
+        padding-bottom: 60px;     
+    }
+  }
   &__inner {
     @media (min-width: 768px) {
       display: flex;
-      gap: 128px;
-      margin-bottom: 40px;
+      justify-content: space-between;
     }
+    
   }
   &__subtitle {
     display: block;
@@ -27,8 +34,7 @@
 
   &__title {
     display: block;
-    width: 200px;
-    margin-bottom: 40px;
+    width: 200px;    
 
     @media (min-width: 768px) {
       width: 340px;
@@ -36,12 +42,14 @@
     }
 
     @media (min-width: 1200px) {
-      width: 472px;
+      width: 474px;
       font-size: 56px;
+      font-weight: 400;
     }
   }
 
-  &__subinner {
+  &__content {
+    margin-top: 40px;
     @media (min-width: 768px) {
       margin-top: 60px;
     }
@@ -52,11 +60,7 @@
 
   &__address {
     display: block;
-
-    margin: 40px 0;
-    @media (min-width: 768px) {
-      margin: 40px 0 0 0;
-    }
+    margin-top: 40px;
   }
 
   &__tel {
@@ -77,19 +81,16 @@
 
 .copyright {
   border-top: 1px solid #e1e1e1;
+
   padding-top: 16px;
+  padding-bottom: 4px;
 
   @media (min-width: 768px) {
     padding-top: 8px;
-  }
-
-  @media (min-width: 1200px) {
-    padding-top: 7px;
-  }
+  }  
 
   &__text {
     width: 150px;
-
     margin-left: auto;
     margin-right: auto;
 
