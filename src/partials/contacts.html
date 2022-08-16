@@ -72,7 +72,7 @@
         <button
           type="button"
           class="contact-btn__locations"
-          data-modal-contacs-open
+          data-modal-contacs-loc-open
         >
           Our Locations
           <svg width="6" height="10" class="btn-icon">
@@ -96,9 +96,52 @@
   </div>
 </section>
 
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop-location is-hidden" data-modal-contacs-loc>
+  <div class="modal-loc">
+    <button
+      type="button"
+      class="button-modal-clouse"
+      data-modal-contacs-loc-close
+    >
+      X
+    </button>
+    <p class="modal-loc__top-text">Choose your location:</p>
+    <ul class="">
+      <li class="modal-loc__link">
+        <a
+          href="https://goo.gl/maps/8Lobm1j3YGSJRMxu7"
+          class="modal-loc__text"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+          >Chicago</a
+        >
+      </li>
+      <li class="modal-loc__link">
+        <a
+          href="https://goo.gl/maps/BZHwLprHPpefR6wV9"
+          class="modal-loc__text"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+          >Los Angeles</a
+        >
+      </li>
+      <li class="modal-loc__link">
+        <a
+          href="https://goo.gl/maps/46RinRjc1G2dgtqSA"
+          class="modal-loc__text"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+          >New York</a
+        >
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="backdrop is-hidden" data-modal-contacs>
   <div class="modal">
-    <button data-modal-close type="submit" class="button-modal-close">
+    <button data-modal-contacs-close type="submit" class="button-modal-close">
       X
     </button>
     <p class="modal-title">Leave your details, we will call you back</p>
@@ -152,47 +195,4 @@
   </div>
 </div>
 
-
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal-loc">
-    <button
-      type="button"
-      class="button-modal-clouse"
-      data-modal-close
-    >
-      X
-    </button>
-    <p class="modal-loc__top-text">Choose your location:</p>
-    <ul class="">
-      <li class="modal-loc__link">
-        <a
-          href="https://goo.gl/maps/8Lobm1j3YGSJRMxu7"
-          class="modal-loc__text"
-          target="_blank"
-          rel="noopener nofollow noreferrer"
-          >Chicago</a
-        >
-      </li>
-      <li class="modal-loc__link">
-        <a
-          href="https://goo.gl/maps/BZHwLprHPpefR6wV9"
-          class="modal-loc__text"
-          target="_blank"
-          rel="noopener nofollow noreferrer"
-          >Los Angeles</a
-        >
-      </li>
-      <li class="modal-loc__link">
-        <a
-          href="https://goo.gl/maps/46RinRjc1G2dgtqSA"
-          class="modal-loc__text"
-          target="_blank"
-          rel="noopener nofollow noreferrer"
-          >New York</a
-        >
-      </li>
-    </ul>
-  </div>
-</div>
-<script src="./js/modal.js"></script>
 <script src="./js/modal-contacs.js"></script>
