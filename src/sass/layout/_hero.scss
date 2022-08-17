@@ -77,7 +77,9 @@
   &__btn {
     font-size: 8px;
     line-height: 1.25;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--default-background);
 
     background-color: var(--red-dominant-color);

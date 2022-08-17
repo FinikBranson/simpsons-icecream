@@ -1,5 +1,6 @@
 import $ from 'jquery';
-
+const mobileMenu = document.querySelector('.js-menu-container');
+const openMenuBtn = document.querySelector('.js-open-menu');
 $(document).ready(function () {
   // Add smooth scrolling to all links
   $('a').on('click', function (event) {
@@ -7,11 +8,9 @@ $(document).ready(function () {
     if (this.hash !== '') {
       // Prevent default anchor click behavior
       event.preventDefault();
-
       // Store hash
       var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
+      // Using jQuery’s animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate(
         {
@@ -24,5 +23,20 @@ $(document).ready(function () {
         }
       );
     }
+
+if (
+      mobileMenu.classList.value !== 'header__burger js-menu-container is-open'
+    ) {
+      return;
+    }
+
+    const isMenuOpen =
+      openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+    openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+    mobileMenu.classList.toggle('is-open');
+    const scrollLockMethod = !isMenuOpen
+      ? 'disableBodyScroll'
+      : 'enableBodyScroll';
+    bodyScrollLock[scrollLockMethod](document.body);
   });
 });
