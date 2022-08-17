@@ -6,31 +6,42 @@
             <div class="about__image-wrap">
                 <picture>
                     <source srcset="
-                        ./images/about/cow-desktop@1x.webp 501w, 
-                        ./images/about/cow-desktop@2x.webp 1002w"
+                        ./images/about/cow-desktop@1x.webp 1x, 
+                        ./images/about/cow-desktop@2x.webp 2x"
                         media="(min-width:1200px)"
                         type="image/webp">
 
                     <source srcset="
-                         ./images/about/cow-desktop@1x.png 501w, 
-                        ./images/about/cow-desktop@2x.png 1002w"
+                        ./images/about/cow-desktop@1x.png 1x, 
+                        ./images/about/cow-desktop@2x.png 2x"
                         media="(min-width:1200px)"
                         type="image/png">
 
                     <source srcset="
-                        ./images/about/cow-tablet@1x.webp 336w, 
-                        ./images/about/cow-tablet@2x.webp 672w,
-                        ./images/about/cow-tablet@1x.png 336w, 
-                        ./images/about/cow-tablet@2x.png 672w" 
-                        media="(min-width:768px)">
+                        ./images/about/cow-tablet@1x.webp 1x, 
+                        ./images/about/cow-tablet@2x.webp 2x"
+                        media="(min-width:768px)"
+                        type="image/webp">
+
+                    <source srcset="    
+                        ./images/about/cow-tablet@1x.png 1x, 
+                        ./images/about/cow-tablet@2x.png 2x" 
+                        media="(min-width:768px)"
+                        type="image/png">
+
                     <source srcset="
-                        ./images/about/cow-mobile@1x.webp 280w, 
-                        ./images/about/cow-mobile@2x.webp 560w,
-                        ./images/about/cow-mobile@1x.png 280w, 
-                        ./images/about/cow-mobile@2x.png 560w" 
-                        media="(min-width:320px)">
+                        ./images/about/cow-mobile@1x.webp 1x, 
+                        ./images/about/cow-mobile@2x.webp 2x"
+                        media="(min-width:320px)"
+                        type="image/webp">
+
+                    <source srcset="    
+                        ./images/about/cow-mobile@1x.png 1x, 
+                        ./images/about/cow-mobile@2x.png 2x" 
+                        media="(min-width:320px)"
+                        type="image/png">
                 
-                    <img class="about__image animate__animated animate__heartBeat" loading="lazy" src="./images/about/cow-mobile@1x.webp" alt="Корова">
+                    <img class="about__image animate__animated animate__heartBeat" loading="lazy" src="./images/about/cow-mobile@1x.webp" alt="cow with milk">
                 </picture>
             </div>
             <div class="about__text-block">
@@ -41,7 +52,9 @@
                 <p class="about__text">
                     Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
                     in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
-                    maximus. Cras massa nibh, tincidunt.<br> </br>
+                    maximus. Cras massa nibh, tincidunt.
+                    <br>
+                    <br>
                     Aliquam erat volutpat. Aenean accumsan.
                 </p>
                 <button class="about__btn animate__animated animate__flip" data-modal-open>
@@ -54,58 +67,3 @@
         </div>
     </div>
 </section>
-
-<!-- <div class="about__backdrop is-hidden" data-modal>
-    <div class="about__menu">
-        <ul class="about-backdrop__list">
-            <li class="about-backdrop__item">
-                <h3 class="about-overlay__name">Ice Cream</h3>
-                <p class="about-overlay__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sint a nam culpa, quidem
-                    blanditiis? Fugiat deleniti
-                    corrupti voluptas earum labore perspiciatis, veritatis at ad rerum ut, impedit id voluptatem
-                    distinctio quo a iste
-                    quibusdam maiores totam ullam et nisi? Similique libero soluta vel magnam mollitia. Ipsam iure,
-                    explicabo cupiditate
-                    sint facilis hic, eum amet laudantium odio sed earum quae quos deleniti voluptatibus aut, reiciendis
-                    deserunt inventore
-                    maxime adipisci?
-                </p>
-            </li>
-            <li class="about-backdrop__item">
-                <h3 class="about-overlay__name">Ice Cream</h3>
-                <p class="about-overlay__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sint a nam culpa, quidem
-                    blanditiis? Fugiat deleniti
-                    corrupti voluptas earum labore perspiciatis, veritatis at ad rerum ut, impedit id voluptatem
-                    distinctio quo a iste
-                    quibusdam maiores totam ullam et nisi? Similique libero soluta vel magnam mollitia. Ipsam iure,
-                    explicabo cupiditate
-                    sint facilis hic, eum amet laudantium odio sed earum quae quos deleniti voluptatibus aut, reiciendis
-                    deserunt inventore
-                    maxime adipisci?
-                </p>
-            </li>
-            <li class="about-backdrop__item">
-                <h3 class="about-overlay__name">Ice Cream</h3>
-                <p class="about-overlay__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sint a nam culpa, quidem
-                    blanditiis? Fugiat deleniti
-                    corrupti voluptas earum labore perspiciatis, veritatis at ad rerum ut, impedit id voluptatem
-                    distinctio quo a iste
-                    quibusdam maiores totam ullam et nisi? Similique libero soluta vel magnam mollitia. Ipsam iure,
-                    explicabo cupiditate
-                    sint facilis hic, eum amet laudantium odio sed earum quae quos deleniti voluptatibus aut, reiciendis
-                    deserunt inventore
-                    maxime adipisci?
-                </p>
-            </li>
-        </ul>
-        <button class="about__btn about__menu-btn" data-modal-close>
-            Back to the site
-            <svg class="btn__icon" width="5px" height="8px">
-                <use href="./images/about/sprite.svg#arrow"></use>
-            </svg>
-        </button>
-    </div>
-</div> -->
